@@ -52,22 +52,23 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public Student getStudent(int index) {
 		// Add your implementation here
-		
-		return s[index];
+		return Student.get(i);
 	}
 
 	@Override
 	public void setStudent(Student student, int index) {
 		// Add your implementation here
-		/*try {
-			if(index<0&&index>=n)
-				throws
-		}*/
+		s(index).setId=student.Id;
+		s(index).setfullName=student.fullName;
+		s(index).setbirthDate=student.birthDate;
+		s(index).setavgMark=student.avgMark;
+		
 	}
 
 	@Override
 	public void addFirst(Student student) {
 		// Add your implementation here
+		
 	}
 
 	@Override
