@@ -26,23 +26,43 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public Student[] getStudents() {
 		// Add your implementation here
-		return null;
+		
+		
+		return s;
 	}
 
 	@Override
 	public void setStudents(Student[] students) {
 		// Add your implementation here
+		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+		int id;
+		String fullname;
+		Date bd;
+		double avg; 
+		id=sc.nextInt();
+		fullname=sc.next();
+		bd=sc.next();
+		avg=sc.nextDouble();
+		s[i].setId(id);
+		s[i].setfullName(fullName)
+		s[i].setbirthDate(bd);
+		s[i].setavgMark(avg);
 	}
 
 	@Override
 	public Student getStudent(int index) {
 		// Add your implementation here
-		return null;
+		
+		return s[index];
 	}
 
 	@Override
 	public void setStudent(Student student, int index) {
 		// Add your implementation here
+		/*try {
+			if(index<0&&index>=n)
+				throws
+		}*/
 	}
 
 	@Override
